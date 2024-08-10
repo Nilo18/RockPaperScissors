@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Practice</title>
+  <script src="./09-dom.js" defer></script>
+  <link rel="stylesheet" href="09-dom.css">
+</head>
+</head>
+<body style="margin-bottom: 1000px;">
+  <button id="testButton">hello</button>
+  <button class="js-button" onclick="test(true)">Second Button</button>
+
+  <p>YouTube Subscribe Button</p>
+  <button class="js-subscribeButton subscribe-button" onclick="subscribe()">Subscribe</button>
+
+
+<div class="RPS-game">
+  <p>Rock Paper Scissors</p>
+  <button onclick="RPS('Rock')" class="game-button">
+    <img src="./Assets/rock-emoji.png" class="game-image">
+  </button>
+  <button onclick="RPS('Paper')" class="game-button">
+    <img src="./Assets/paper-emoji.png" class="game-image">
+  </button>
+  <button onclick="RPS('Scissors')" class="game-button">
+    <img src="./Assets/scissors-emoji.png" class="game-image">
+  </button>
+  <p class="js-result"></p>
+ <div class="moves-flexbox">
+  <p>You</p>
+  <p class="js-moves"></p>
+  <img src="" class="js-playerImage game-image">
+  <img src="" class="js-computerImage game-image">
+  <p>Computer</p>
+ </div>
+  <p class="js-score"></p>
+  <button onclick="RPS('Reset Score')">Reset Score</button>
+</div>
+
+
+  <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = +$10 shipping.</p>
+  <p>Orders over $40 = FREE shipping.</p>
+  <input type="text" placeholder="Cost of order" class="js-userInput userInput" onkeydown="handleCostKeyDown(event)">
+  <button class="calculateButton" onclick="calculatePrice()">Calculate</button>
+  <p class="js-totalCost"></p>
+
+
+  <button class="js-button1">9a</button>
+  <button class="js-button2">9b</button>
+
+  <button class="head" onclick="headsAndTails('Heads')">Heads</button>
+  <button class="tail" onclick="headsAndTails('Tails')">Tails</button>
+  <p class="decision"></p>
+
+  <input type="text" class="js-nameInput" placeholder="Name" onkeydown="handleEnter()">
+  <button onclick="nameDisplayer()">Submit</button>
+  <p class="js-nameDisplay"></p>
+
+  <input type="text" placeholder="Type something" onkeyup="textDetector(event)" class="js-inputText">
+  <p class="js-textDisplayer"></p>
+
+
+<button onclick="updateCartQuantity('Show Quantity')">Show Quantity</button>
+
+<button onclick="
+  updateCartQuantity(1);
+">Add to Cart</button>
+
+<button onclick="
+  updateCartQuantity(2);
+">+2</button>
+
+<button onclick="
+  updateCartQuantity(3);
+">+3</button>
+
+<button onclick="
+  updateCartQuantity(4);
+">+4</button>
+
+<button onclick="
+  updateCartQuantity(5);
+">+5</button>
+
+<button onclick="
+  updateCartQuantity(-1);
+">Remove from cart</button>
+
+<button onclick="
+  updateCartQuantity(-2);
+">-2</button>
+
+<button onclick="
+  updateCartQuantity(-3);
+">-3</button>
+
+<button onclick="updateCartQuantity('Reset Cart')">Reset Cart</button>
+<p class="js-cartQuantityDisplay"></p>
+
+
+
+    <!-- Create an element to display the calculation. -->
+    <p class="js-calculation"></p>
+
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      ">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      ">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      ">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      ">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      ">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      ">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      ">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      ">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      ">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      ">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      ">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      ">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      ">Clear</button>
+    </p>
+<div class="js-detailsButton details-button" onclick="viewDetails ()">
+  დეტალურად
+</div>
+<a class="js-naecLink naec-link" target="_blank" href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiX3eb1sOOHAxVYSfEDHeiLLvsQPQgJ"></a>
+
+
+</body>
+</html>

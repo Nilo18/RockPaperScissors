@@ -1,0 +1,71 @@
+.details-button {
+  margin-left: 50px;
+  padding-left: 18px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.details-button:hover {
+  background-color: rgb(233, 232, 232);
+  width: 133px;
+  cursor: pointer;
+}
+
+.naec-link:hover {
+  color: red;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.userInput {
+  width: 220px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.calculateButton {
+  background-color: green;
+  color: white;
+  width: 110px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.RPS-game {
+  margin-left: 10px;
+}
+
+.game-button {
+  border: 3px solid black;
+  border-radius: 100px;
+  padding: 20px;
+  background-color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.game-image {
+  width: 70px;
+}
+
+.moves-flexbox {
+  display: flex;
+  flex-direction: row; 
+}
+
